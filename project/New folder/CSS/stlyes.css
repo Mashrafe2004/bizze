@@ -1,0 +1,171 @@
+/**COMMON CSS*/
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+</style>
+body{
+    margin: auto;
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryFont:'Ubuntu', sans-serif;
+    --secondaryFont: 'Abril Fatface';
+    --thirdFont: 'Open Sans', sans-serif;
+    --primaryColor:#0f2f44;
+    --secondaryColor: #ffc712;
+   --purpleColor: #8484bf;
+}
+body{
+    font-family: var(--primaryFont);
+}
+a{
+text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+width: 1170px;
+margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/**COMMONCSS END*/
+
+/* HEADER STARTS HERE */
+
+header{
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 19px 0;
+}
+header .opening,
+header .welcome{
+    width: 50%;
+}
+header .opening{
+    text-align: right;
+}
+
+/* HEADER ENDS HERE */
+
+/** NAV STARTS*/
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 40px 19px;
+    display: block;
+    transition: 0.40s;
+    
+}
+
+nav .menu ul li:hover a{
+    background-color: #fff9e6;
+    color: vae(--secondaryColor);
+}
+nav .menu ul li span{
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #999;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+
+/** NAV ENDS*/
+
+
+/** BANNER STARTS*/
+
+#banner{
+    background-image: url(./ing/banner.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-cnt{
+   width: 40%;
+}
+.banner-cnt h2{
+    font-size: 50px;
+    color: var(--primaryColor);
+    font-weight: 300;
+}
+.banner-cnt h1{
+     color: var(--primaryColor);
+    font-size: 80px;
+    font-weight: 400;
+    font-family: var(--secondaryFont);
+    text-transform: uppercase;
+    line-height: 45px;
+}
+.banner-cnt h4{
+    color: var(--purpleColor);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+.banner-cnt p{
+    font-family: var(--thirdFont);
+    font-size: 14px;
+    color: #444;
+    margin: 33px 0;
+}
+#banner .btn{
+    background-color: var(--purpleColor);
+    color: white;
+}
+#banner .container,
+#banner .row{
+    height: 100%;
+}
+.banner-cnt .videoBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--purpleColor);
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.163);
+}
+
+/** BANNER ENDS*/
